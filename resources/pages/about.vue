@@ -1,7 +1,7 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <img src="../assets/img/jonah-whale.svg" alt="$" class="logo" />
+    <img src="~assets/img/jonah-whale.svg" alt="" class="logo" />
     <h1 class="title">
       This page is loaded from the {{ name }}
     </h1>
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/variables';
+@import '~assets/css/variables';
 
 .title
 {

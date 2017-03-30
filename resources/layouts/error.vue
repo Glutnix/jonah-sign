@@ -1,7 +1,7 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <img src="../assets/img/jonah-whale.svg" alt="" />
+    <img src="~assets/img/jonah-whale.svg" alt="" />
     <h1 class="title">
       {{ error.statusCode }}
     </h1>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/variables';
+@import '~assets/css/variables';
 
 .title
 {

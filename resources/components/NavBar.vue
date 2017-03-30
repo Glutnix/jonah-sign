@@ -2,7 +2,7 @@
   <nav>
     <h1>
       <nuxt-link class="button" to="/">
-        <img class="logo" src="../assets/img/jonah-whale.svg" alt="" />
+        <img class="logo" src="~assets/img/jonah-whale.svg" alt="" />
         Jonah Sign
       </nuxt-link>
     </h1>
@@ -10,7 +10,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/css/variables';
+@import '~assets/css/variables';
 
 nav {
   padding: 10px 1em;

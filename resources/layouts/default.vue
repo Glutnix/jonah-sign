@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/variables';
+@import '~assets/css/variables';
 
 .container
 {

@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <img src="../assets/img/jonah-whale.svg" alt="" class="logo" />
+    <img src="~assets/img/jonah-whale.svg" alt="" class="logo" />
     <h1 class="title">
       Jonah Sign
     </h1>
@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/css/variables';
+@import '~assets/css/variables';
 
 .title
 {
