@@ -23,19 +23,16 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/css/variables';
 
-.title
-{
+.title {
   margin-top: 15px;
   font-size: 5em;
 }
-.info
-{
+.info {
   font-weight: 300;
   color: $lightgray;
   margin: 0;
 }
-.button
-{
+.button {
   margin-top: 50px;
 }
 </style>

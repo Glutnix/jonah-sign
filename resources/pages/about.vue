@@ -32,19 +32,24 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/css/variables';
 
-.title
-{
+.title {
   margin-top: 50px;
 }
-.info
-{
+
+.info {
   font-weight: 300;
   color: $gray;
   margin: 0;
   margin-top: 10px;
 }
-.button
-{
+
+.button {
   margin-top: 50px;
 }
+
+.logo {
+  width: 340px;
+  height: auto;
+}
+
 </style>

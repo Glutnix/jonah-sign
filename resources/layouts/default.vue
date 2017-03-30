@@ -21,16 +21,14 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/css/variables';
 
-.container
-{
+.container {
   margin: 0;
   width: 100%;
   padding: 100px 0;
   text-align: center;
 }
 
-.button, .button:visited
-{
+.button, .button:visited {
   display: inline-block;
   color: $purple;
   letter-spacing: 1px;
@@ -41,14 +39,12 @@ export default {
   padding: 15px 45px;
 }
 
-.button:hover, .button:focus
-{
+.button:hover, .button:focus {
   color: $white;
   background-color: $purple;
 }
 
-.title
-{
+.title {
   color: $gray;
   font-weight: 300;
   font-size: 2.5em;

@@ -13,8 +13,12 @@
 <style lang="scss" scoped>
 @import '~assets/css/variables';
 
-.title
-{
+.title {
   margin: 50px 0;
+}
+
+.logo {
+  width: 340px;
+  height: auto;
 }
 </style>
