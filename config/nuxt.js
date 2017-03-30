@@ -7,37 +7,28 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Adonuxt',
+    title: 'Jonah Sign',
     meta: [
-      {
-        charset: 'utf-8'
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Adonuxt project'
-      }
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'theme-color', content: '#ffffff' }
     ],
     link: [
-      {
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: 'favicon.ico'
-      }
+      { rel: 'apple-touch-icon', size: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', size: '32x32' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', size: '16x16' },
+      { rel: 'manifest', href: '/manifest.json' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#413F64' }
     ]
   },
   /*
   ** Global CSS
   */
-  css: ['~assets/css/main.css'],
+  css: [{ src: '~assets/css/main.scss', lang: 'scss' }],
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#744d82' },
+  loading: { color: '#413F64' },
   /*
   ** Point to resources
   */

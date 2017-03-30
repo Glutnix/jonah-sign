@@ -1,7 +1,7 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" />
+    <img src="../assets/img/jonah-whale.svg" alt="" />
     <h1 class="title">
       {{ error.statusCode }}
     </h1>
@@ -20,7 +20,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../assets/css/variables';
+
 .title
 {
   margin-top: 15px;
@@ -29,7 +31,7 @@ export default {
 .info
 {
   font-weight: 300;
-  color: #9aabb1;
+  color: $lightgray;
   margin: 0;
 }
 .button

@@ -13,7 +13,7 @@
     "lint": "standard && eslint --ext .js,.vue resources/",
     "start": "echo \"\\033[31mWARN: 'start' will be depreciated soon. Instead use 'yarn serve'\" && yarn serve",
     "dev": "echo \"\\033[31mWARN: 'dev' will be depreciated soon. Instead use 'yarn serve:dev'\" && yarn serve:dev",
-    "precommit": "yarn lint",
+    "precommit": "yarn lint"
   },
   "dependencies": {
     "adonis-ace": "^3.0.6",
@@ -25,7 +25,9 @@
     "adonis-middleware": "^1.0.10",
     "adonis-websocket": "^1.0.2",
     "cross-env": "^3.1.4",
+    "node-sass": "^4.5.2",
     "nuxt": "latest",
+    "sass-loader": "^6.0.3",
     "standard": "^8.6.0",
     "youch": "^2.0.4"
   },

@@ -1,21 +1,26 @@
 <template>
   <div>
+    <nav-bar/>
     <nuxt/>
     <my-footer/>
   </div>
 </template>
 
 <script>
-import MyFooter from '~components/Footer.vue'
+import MyFooter from '~components/Footer.vue';
+import NavBar from '~components/NavBar.vue';
 
 export default {
   components: {
-    MyFooter
+    MyFooter,
+    NavBar
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../assets/css/variables';
+
 .container
 {
   margin: 0;
@@ -27,10 +32,10 @@ export default {
 .button, .button:visited
 {
   display: inline-block;
-  color: #744d82;
+  color: $purple;
   letter-spacing: 1px;
-  background-color: #fff;
-  border: 2px solid #744d82;
+  background-color: $white;
+  border: 2px solid $purple;
   text-decoration: none;
   text-transform: uppercase;
   padding: 15px 45px;
@@ -38,13 +43,13 @@ export default {
 
 .button:hover, .button:focus
 {
-  color: #fff;
-  background-color: #744d82;
+  color: $white;
+  background-color: $purple;
 }
 
 .title
 {
-  color: #505153;
+  color: $gray;
   font-weight: 300;
   font-size: 2.5em;
   margin: 0;

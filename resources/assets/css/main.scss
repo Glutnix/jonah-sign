@@ -1,8 +1,9 @@
+@import 'variables';
+
 html, body
 {
   background-color: #fff;
-  color: #2e2f30;
-  letter-spacing: 0.5px;
+  color: $black;
   font-family: "Source Sans Pro", Arial, sans-serif;
   height: 100vh;
   margin: 0;
@@ -17,7 +18,7 @@ footer
 
 a, a:hover, a:focus, a:visited
 {
-  color: #744d82;
+  color: $purple;
 }
 
 .logo {

@@ -1,5 +1,5 @@
 <template>
   <footer>
-    Visit our website for more documentation : <a href="https://nuxtjs.org" target="_blank">nuxtjs.org</a>
+    <a href="https://github.com/Glutnix/jonah-sign">GitHub</a>
   </footer>
 </template>

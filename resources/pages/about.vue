@@ -1,7 +1,7 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
+    <img src="../assets/img/jonah-whale.svg" alt="$" class="logo" />
     <h1 class="title">
       This page is loaded from the {{ name }}
     </h1>
@@ -29,7 +29,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../assets/css/variables';
+
 .title
 {
   margin-top: 50px;
@@ -37,7 +39,7 @@ export default {
 .info
 {
   font-weight: 300;
-  color: #9aabb1;
+  color: $gray;
   margin: 0;
   margin-top: 10px;
 }
