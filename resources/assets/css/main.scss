@@ -2,8 +2,8 @@
 
 html, body
 {
-  background-color: #fff;
-  color: $black;
+  background-color: $white;
+  color: $body-text-color;
   font-family: "Source Sans Pro", Arial, sans-serif;
   height: 100vh;
   margin: 0;
@@ -13,12 +13,12 @@ footer
 {
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid $lightgray;
 }
 
 a, a:hover, a:focus, a:visited
 {
-  color: $purple;
+  color: $body-link-color;
 }
 
 .page-enter-active, .page-leave-active
