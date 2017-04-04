@@ -3,7 +3,10 @@
 class SignController {
   show (request, response) {
     response.send({
-      slide: 'SlideDemo'
+      slide: 'SlideDemo',
+      slideProps: {
+        banana: '🍌🍌🍌'
+      }
     })
   }
 }

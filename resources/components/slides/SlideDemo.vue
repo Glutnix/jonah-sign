@@ -12,7 +12,7 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
     <p>
-      Some regular text that wraps, complete with 😇 👼 emoji
+      Some regular text that wraps, complete with 😇 {{ slideProps.banana }}👼 emoji
     </p>
     <p>
       <small>Some smaller text</small>
@@ -23,6 +23,15 @@
 
 <script>
 export default {
+  props: {
+    slideProps: {
+      default() {
+        return {
+          banana: '🗑'
+        }
+      }
+    }
+  },
   computed: {
     slug() {
       return this.$route.params.slug

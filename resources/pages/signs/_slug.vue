@@ -1,6 +1,6 @@
 <template>
   <div>
-    <component v-bind:is="slide"></component>
+    <component :is="slide" :slide-props="slideProps"></component>
   </div>
 </template>
 
@@ -19,7 +19,8 @@ export default {
     let data = apiRes.data;
 
     return {
-      slide: data.slide
+      slide: data.slide,
+      slideProps: data.slideProps
     }
   },
 
