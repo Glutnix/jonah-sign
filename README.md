@@ -1,6 +1,6 @@
 # Jonah Sign
 
-<img src="resources/assets/img/jonah-whale.svg" alt="" height="200">
+<img src=".github/jonah-sign.png" alt="" height="200">
 
 *Matthew 12:39*
 
