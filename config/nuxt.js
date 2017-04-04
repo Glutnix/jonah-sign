@@ -3,6 +3,10 @@
 const resolve = require('path').resolve
 
 module.exports = {
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
+
   /*
   ** Headers of the page
   */
@@ -25,12 +29,23 @@ module.exports = {
   ** Global CSS
   */
   css: [{ src: '~assets/css/main.scss', lang: 'scss' }],
+
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#413F64' },
+
   /*
   ** Point to resources
   */
-  srcDir: resolve(__dirname, '..', 'resources')
+  srcDir: resolve(__dirname, '..', 'resources'),
+
+  build: {
+    vendor: ['axios']
+  },
+
+  plugins: [
+    '~plugins/slides',
+    '~plugins/axios'
+  ]
 }

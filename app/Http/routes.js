@@ -17,4 +17,5 @@
 
 const Route = use('Route')
 
+Route.resource('api/sign', 'SignController')
 Route.any('*', 'NuxtController.render')
