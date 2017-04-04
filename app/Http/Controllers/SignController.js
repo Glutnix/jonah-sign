@@ -1,7 +1,7 @@
 'use strict'
 
 class SignController {
-  show (request, response) {
+  * show (request, response) {
     response.send({
       slide: 'SlideDemo',
       slideProps: {
