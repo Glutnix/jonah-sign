@@ -7,13 +7,7 @@ html, body
   font-family: "Source Sans Pro", Arial, sans-serif;
   height: 100vh;
   margin: 0;
-}
-
-footer
-{
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid $lightgray;
+  overflow: hidden;
 }
 
 a, a:hover, a:focus, a:visited
