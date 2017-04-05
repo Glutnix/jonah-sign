@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "serve": "cross-env NODE_ENV=production node server.js",
-    "serve:dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
+    "serve:dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node --inspect server.js",
     "build": "node ./ace nuxtbuild",
     "lint": "standard && eslint --ext .js,.vue resources/",
     "start": "echo \"\\033[31mWARN: 'start' will be depreciated soon. Instead use 'yarn serve'\" && yarn serve",
@@ -29,6 +29,7 @@
     "node-sass": "^4.5.2",
     "nuxt": "latest",
     "sass-loader": "^6.0.3",
+    "sqlite3": "^3.1.8",
     "standard": "^8.6.0",
     "youch": "^2.0.4"
   },

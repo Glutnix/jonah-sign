@@ -27,3 +27,4 @@ lib-cov
 
 # Nuxt.js
 .nuxt/
+database/*.sqlite
