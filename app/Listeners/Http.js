@@ -32,6 +32,11 @@ Http.handleError = function * (error, request, response) {
 
   console.error(error.stack)
 
+  if (error.name === 'ModelNotFoundException') {
+    response.status(401).send('Resource not found')
+    return
+  }
+
   if (request.is('html')) {
     yield response.status(status).sendView('errors/index', {error})
     return

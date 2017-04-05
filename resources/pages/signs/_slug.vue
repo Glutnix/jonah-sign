@@ -19,8 +19,8 @@ export default {
     let data = apiRes.data;
 
     return {
-      slide: data.slide,
-      slideProps: data.slideProps
+      slide: data.default_slide,
+      slideProps: data.slide_props
     }
   },
 

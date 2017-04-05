@@ -17,5 +17,8 @@
 
 const Route = use('Route')
 
-Route.resource('api/sign', 'SignController')
+Route.group('apiv1', function () {
+  Route.get('sign/:slug', 'SignController.show')
+}).prefix('api')
+
 Route.any('*', 'NuxtController.render')
