@@ -1,53 +1,62 @@
 <template>
-  <div>
-    <nav-bar/>
-    <nuxt/>
-    <my-footer/>
-  </div>
+  <v-app left-fixed-sidebar>
+    <v-toolbar>
+      <v-toolbar-side-icon @click.native.stop="sidebar = !sidebar" />
+      <v-toolbar-title>
+        <img class="logo" src="~assets/img/jonah-whale.svg" alt="" />
+        Jonah Sign
+      </v-toolbar-title>
+    </v-toolbar>
+    <main>
+      <v-sidebar left fixed drawer v-model="sidebar">
+        <v-list>
+          <v-list-item>
+            <v-list-tile nuxt router href="/">
+              <v-list-tile-title>Home</v-list-tile-title>
+            </v-list-tile>
+          </v-list-item>
+          <v-list-item>
+            <v-list-tile nuxt router href="/about">
+              <v-list-tile-title>About</v-list-tile-title>
+            </v-list-tile>
+          </v-list-item>
+        </v-list>
+      </v-sidebar>
+      <v-content>
+        <v-container fluid>
+          <nuxt/>
+        </v-container>
+      </v-content>
+    </main>
+  </v-app>
 </template>
 
 <script>
-import MyFooter from '~components/Footer.vue'
-import NavBar from '~components/NavBar.vue'
-
 export default {
-  components: {
-    MyFooter,
-    NavBar
+  asyncData() {
+    return {
+      sidebar: false
+    }
+  },
+  data() {
+    return {
+      sidebar: false
+    }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~assets/css/variables';
-
-.container {
-  margin: 0;
-  width: 100%;
-  padding: 100px 0;
-  text-align: center;
+<style lang="scss">
+.logo {
+  height: 30px;
+  vertical-align: middle;
 }
-
-.button, .button:visited {
-  display: inline-block;
-  color: $purple;
-  letter-spacing: 1px;
-  background-color: $white;
-  border: 2px solid $purple;
+.toolbar__title a {
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px 45px;
+  color: #fff;
 }
+</style>
 
-.button:hover, .button:focus {
-  color: $white;
-  background-color: $purple;
-}
-
-.title {
-  color: $gray;
-  font-weight: 300;
-  font-size: 2.5em;
-  margin: 0;
-}
+<style lang="styl">
+@require '~assets/vuetify/app.styl'
 </style>

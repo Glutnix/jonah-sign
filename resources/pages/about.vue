@@ -1,4 +1,3 @@
-{{{{raw}}}}
 <template>
   <section class="container">
     <img src="~assets/img/jonah-whale.svg" alt="" class="logo" />
@@ -13,12 +12,17 @@
     </nuxt-link>
   </section>
 </template>
-{{{{/raw}}}}
+
 <script>
 export default {
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client'
+    }
+  },
+  data() {
+    return {
+      name: 'client'
     }
   },
   head () {
@@ -30,22 +34,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/variables';
-
-.title {
-  margin-top: 50px;
-}
-
-.info {
-  font-weight: 300;
-  color: $gray;
-  margin: 0;
-  margin-top: 10px;
-}
-
-.button {
-  margin-top: 50px;
-}
 
 .logo {
   width: 340px;

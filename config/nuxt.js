@@ -22,14 +22,18 @@ module.exports = {
       { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', size: '32x32' },
       { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', size: '16x16' },
       { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#413F64' }
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#413F64' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
 
   /*
   ** Global CSS
   */
-  css: [{ src: '~assets/css/main.scss', lang: 'scss' }],
+  css: [
+    { src: '~assets/css/main.scss', lang: 'scss' }
+  ],
 
   /*
   ** Customize the progress-bar color
@@ -42,11 +46,12 @@ module.exports = {
   srcDir: resolve(__dirname, '..', 'resources'),
 
   build: {
-    vendor: ['axios']
+    vendor: ['axios', 'vuetify']
   },
 
   plugins: [
     '~plugins/slides',
-    '~plugins/axios'
+    '~plugins/axios',
+    '~plugins/vuetify'
   ]
 }
