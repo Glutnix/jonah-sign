@@ -8,8 +8,6 @@ class SignController {
 
     const sign = yield Sign.findByOrFail('slug', slug)
 
-    console.log(sign)
-
     response.send(sign.toJSON())
   }
 }

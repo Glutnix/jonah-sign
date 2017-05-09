@@ -46,11 +46,10 @@ module.exports = {
   srcDir: resolve(__dirname, '..', 'resources'),
 
   build: {
-    vendor: ['axios', 'vuetify']
+    vendor: ['axios', 'vuetify', 'adonis-websocket-client']
   },
 
   plugins: [
-    '~plugins/slides',
     '~plugins/axios',
     '~plugins/vuetify'
   ]

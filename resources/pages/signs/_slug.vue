@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import SlidesMixin from '~plugins/slides';
+import SlideList from '~plugins/mixins/slideList';
 import axios from '~plugins/axios';
 export default {
   mixins: [
-    SlidesMixin
+    SlideList
   ],
 
   layout: 'sign-layout',
@@ -25,7 +25,7 @@ export default {
   },
 
   computed: {
-    slug () {
+    signName () {
       return this.$route.params.slug;
     }
   },

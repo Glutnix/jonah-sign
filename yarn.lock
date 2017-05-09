@@ -159,6 +159,14 @@ adonis-middleware@^1.0.10:
     qs "^6.3.1"
     uuid "^3.0.1"
 
+adonis-websocket-client@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/adonis-websocket-client/-/adonis-websocket-client-1.0.2.tgz#219316100f6695ac506bd400281836d9b3b5dd1c"
+  dependencies:
+    base-64 "^0.1.0"
+    lodash "^4.17.2"
+    socket.io-client "^1.7.2"
+
 adonis-websocket@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/adonis-websocket/-/adonis-websocket-1.0.4.tgz#208c47f60e340b1bb172bbb332f5503592b1e451"
@@ -971,6 +979,10 @@ backo2@1.0.2:
 balanced-match@^0.4.1, balanced-match@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
+
+base-64@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/base-64/-/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
 
 base64-arraybuffer@0.1.5:
   version "0.1.5"
@@ -5601,7 +5613,7 @@ socket.io-adapter@0.5.0:
     debug "2.3.3"
     socket.io-parser "2.3.1"
 
-socket.io-client@1.7.3:
+socket.io-client@1.7.3, socket.io-client@^1.7.2:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-1.7.3.tgz#b30e86aa10d5ef3546601c09cde4765e381da377"
   dependencies:
