@@ -23,3 +23,11 @@ a, a:hover, a:focus, a:visited
 {
   opacity: 0
 }
+
+.content > .container {
+  padding: 1rem 1rem 0;
+  @media screen and (min-width: 576px) {
+    padding: 1rem 2.5rem 0;
+    max-width: 1000px;
+  }
+}

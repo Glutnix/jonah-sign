@@ -1,12 +1,14 @@
 <template>
-  <v-app left-fixed-sidebar>
-    <v-toolbar>
-      <v-toolbar-side-icon @click.native.stop="sidebar = !sidebar" />
-      <v-toolbar-title>
-        <img class="logo" src="~assets/img/jonah-whale.svg" alt="" />
-        Jonah Sign
-      </v-toolbar-title>
-    </v-toolbar>
+  <v-app left-sidebar top-fixed-toolbar>
+    <header>
+      <v-toolbar fixed>
+        <v-toolbar-side-icon @click.native.stop="sidebar = !sidebar" />
+        <v-toolbar-title>
+          <img class="logo" src="~assets/img/jonah-whale.svg" alt="" />
+          Jonah Sign
+        </v-toolbar-title>
+      </v-toolbar>
+    </header>
     <main>
       <v-sidebar left fixed drawer v-model="sidebar">
         <v-list>
