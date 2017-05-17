@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="pt-4">
+  <div class="pt-4">
+    <div>
       <div class="title">Change Signs</div>
       <active-signs></active-signs>
     </div>
