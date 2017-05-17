@@ -20,6 +20,7 @@ const Helpers = use('Helpers')
 
 Route.group('apiv1', function () {
   Route.get('sign/:slug', 'SignController.show')
+  Route.get('sign/', 'SignController.index')
 }).prefix('api')
 
 Route.put('/upload/image', 'UploadController.uploadImage')
